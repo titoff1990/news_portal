@@ -17,7 +17,6 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="{{ asset('js/ajax-add-comment.js') }}" defer></script>
-    <script src="{{ asset('js/add-tag.js') }}" defer></script>
     <script src="{{ asset('js/show-more.js') }}" defer></script>
 </head>
 <body>

@@ -31,9 +31,7 @@ class NewsController extends Controller
         $sortedNews = $news->orderBy('comments_count', 'desc')->paginate(2);
         // Количество записей в таблице
         $countOfNews = $news->count();
-
         $count = count($sortedNews);
-
         $arrayOfPopularTags = [];
         // Формируем массив уникальных тегов у популярных новостей
         foreach($sortedNews as $item) {

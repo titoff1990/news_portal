@@ -41,16 +41,6 @@ class TagController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-//        return view('tags.index');
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param Request $request
@@ -83,29 +73,6 @@ class TagController extends Controller
     {
         $tagNews = $tag?->news;
         return view('tags.show', compact('tagNews', 'tag'));
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param Tag $tag
-     * @return Response
-     */
-    public function edit(Tag $tag)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param Request $request
-     * @param Tag $tag
-     * @return Response
-     */
-    public function update(Request $request, Tag $tag)
-    {
-        //
     }
 
     /**

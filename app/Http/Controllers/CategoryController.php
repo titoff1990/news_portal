@@ -71,7 +71,7 @@ class CategoryController extends Controller
     public function show(Category $category): Application|Factory|View
     {
         $categoryNews = $category?->news;
-        //dd($categoryNews);
+
         return view('categories.show', compact('category', 'categoryNews'));
     }
 
